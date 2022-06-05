@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home | Himti</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link href="./styles/style.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section id="navbar">
+      <nav class="navbar navbar-expand-lg position-absolute position-fixed">
+        <div class="container ss">
+          <a class="navbar-brand" href="#">
+            <img
+              src="./assets/images/navbar/navbar-logo.png"
+              alt="navbar-logo"
+              width="100%"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="container"></div>
+          <div
+            class="collapse navbar-collapse navbar-style container-fluid justify-content-end"
+            id="navbarNavDropdown"
+          >
+            <ul class="navbar-nav ml-auto nav-effect">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdownMenuLink"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  HIMTI Regional
+                </a>
+                <ul
+                  class="dropdown-menu"
+                  aria-labelledby="navbarDropdownMenuLink"
+                >
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><span style="color: #1b97d4">G</span>reater Jakarta</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><span style="color: #1b97d4">B</span>andung</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><span style="color: #1b97d4">M</span>alang</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div
+        id="carouselExampleControls"
+        class="carousel slide position-relative"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="./assets/images/navbar/carousel-1.png"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleControls"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleControls"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+    <section id="event" class="mt-5">
+      <div class="container">
+        <h1 style="color: #1b97d4" class="text-center">
+          E<span style="color: black">vent</span> HIMTI
+        </h1>
+      </div>
+    </section>
+
+    <section id="timeline">
+      <div class="container">
+        <h1 style="color: #1b97d4" class="text-center">
+          T<span style="color: black">imeline</span> HIMTI
+        </h1>
+        <div
+          class="swiper-container-wrapper swiper-container-wrapper--timeline"
+        >
+          <!-- Timeline -->
+          <ul class="swiper-pagination-custom">
+            <li class="swiper-pagination-switch first active">
+              <span class="switch-title">2011</span>
+            </li>
+            <li class="swiper-pagination-switch">
+              <span class="switch-title">2012</span>
+            </li>
+            <li class="swiper-pagination-switch">
+              <span class="switch-title">2013</span>
+            </li>
+            <li class="swiper-pagination-switch last">
+              <span class="switch-title">2001</span>
+            </li>
+          </ul>
+          <!-- Progressbar -->
+          <div
+            class="swiper-pagination swiper-pagination-progressbar swiper-pagination-horizontal"
+          ></div>
+          <!-- Swiper -->
+          <div class="swiper swiper-container swiper-container--timeline">
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div
+                  class="d-flex flex-column justify-content-center text-center align-items-center"
+                >
+                  <h1 style="color: #1b97d4">Judul</h1>
+                  <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Quasi dolorum asperiores adipisci ex illum esse cupiditate
+                    ipsa nobis repudiandae quas dolores, nulla, nam amet
+                    exercitationem, vel quia molestiae accusamus et?
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <span class="title">Swiper Timeline Progressbar</span>
+              </div>
+              <div class="swiper-slide">
+                <span class="title">Swiper Timeline Progressbar</span>
+              </div>
+              <div class="swiper-slide">
+                <span class="title">Swiper Timeline Progressbar</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="alumnus">
+      <div class="container position-relative">
+        <h1 style="color: #1b97d4" class="text-center">
+          A<span style="color: black">lumnus</span>
+        </h1>
+        <div class="container p-5 w-100 position-relative">
+          <div class="d-flex animate position-relative left-0">
+            <div class="d-flex w-100 justify-content-center align-items-center">
+              <div class="card-wrapper px-5 py-2 mx-2">
+                <div class="card-picture mx-auto">
+                  <img
+                    src="./assets/images/alumnus/image 22.png"
+                    alt="alumnus-image"
+                  />
+                </div>
+                <div class="card-name">
+                  <h1 class="d-flex justify-content-center">Bayu Ardana</h1>
+                </div>
+                <div class="card-title">
+                  <h1 class="d-flex justify-content-center text-center">
+                    PIC of HIMTI Band(2020) -> Co-Founder, ignitevent.id
+                  </h1>
+                </div>
+                <div class="card-message">
+                  <p class="d-flex justify-content-center text-center">
+                    “Kalau kalian udah sayang sama HIMTI dari awal, secapek
+                    apapun kalian kerjanya bakal tetep ikhlas dan enjoy.”
+                  </p>
+                </div>
+              </div>
+              <div class="card-wrapper px-5 py-2 mx-2">
+                <div class="card-picture mx-auto">
+                  <img
+                    src="./assets/images/alumnus/image 22.png"
+                    alt="alumnus-image"
+                  />
+                </div>
+                <div class="card-name">
+                  <h1 class="d-flex justify-content-center">Bayu Axxx</h1>
+                </div>
+                <div class="card-title">
+                  <h1 class="d-flex justify-content-center text-center">
+                    PIC of HIMTI Band(2020) -> Co-Founder, ignitevent.id
+                  </h1>
+                </div>
+                <div class="card-message">
+                  <p class="d-flex justify-content-center text-center">
+                    “Kalau kalian udah sayang sama HIMTI dari awal, secapek
+                    apapun kalian kerjanya bakal tetep ikhlas dan enjoy.”
+                  </p>
+                </div>
+              </div>
+              <div class="card-wrapper px-5 py-2 mx-2">
+                <div class="card-picture mx-auto">
+                  <img
+                    src="./assets/images/alumnus/image 22.png"
+                    alt="alumnus-image"
+                  />
+                </div>
+                <div class="card-name">
+                  <h1 class="d-flex justify-content-center">Bayu Jxx</h1>
+                </div>
+                <div class="card-title">
+                  <h1 class="d-flex justify-content-center text-center">
+                    PIC of HIMTI Band(2020) -> Co-Founder, ignitevent.id
+                  </h1>
+                </div>
+                <div class="card-message">
+                  <p class="d-flex justify-content-center text-center">
+                    “Kalau kalian udah sayang sama HIMTI dari awal, secapek
+                    apapun kalian kerjanya bakal tetep ikhlas dan enjoy.”
+                  </p>
+                </div>
+              </div>
+              <div class="card-wrapper px-5 py-2 mx-2">
+                <div class="card-picture mx-auto">
+                  <img
+                    src="./assets/images/alumnus/image 22.png"
+                    alt="alumnus-image"
+                  />
+                </div>
+                <div class="card-name">
+                  <h1 class="d-flex justify-content-center">Bayu Jxx</h1>
+                </div>
+                <div class="card-title">
+                  <h1 class="d-flex justify-content-center text-center">
+                    PIC of HIMTI Band(2020) -> Co-Founder, ignitevent.id
+                  </h1>
+                </div>
+                <div class="card-message">
+                  <p class="d-flex justify-content-center text-center">
+                    “Kalau kalian udah sayang sama HIMTI dari awal, secapek
+                    apapun kalian kerjanya bakal tetep ikhlas dan enjoy.”
+                  </p>
+                </div>
+              </div>
+              <div class="card-wrapper px-5 py-2 mx-2">
+                <div class="card-picture mx-auto">
+                  <img
+                    src="./assets/images/alumnus/image 22.png"
+                    alt="alumnus-image"
+                  />
+                </div>
+                <div class="card-name">
+                  <h1 class="d-flex justify-content-center">Bayu Jxx</h1>
+                </div>
+                <div class="card-title">
+                  <h1 class="d-flex justify-content-center text-center">
+                    PIC of HIMTI Band(2020) -> Co-Founder, ignitevent.id
+                  </h1>
+                </div>
+                <div class="card-message">
+                  <p class="d-flex justify-content-center text-center">
+                    “Kalau kalian udah sayang sama HIMTI dari awal, secapek
+                    apapun kalian kerjanya bakal tetep ikhlas dan enjoy.”
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="Gallery" class="mb-5">
+      <div class="container">
+        <h1 style="color: #1b97d4" class="text-center">
+          G<span style="color: black">allery</span>
+        </h1>
+        <div class="container px-4">
+          <div class="row">
+            <div class="col-4">
+              <div class="gallery-wrapper mx-auto"></div>
+            </div>
+            <div class="col-4">
+              <div class="gallery-wrapper mx-auto"></div>
+            </div>
+            <div class="col-4">
+              <div class="gallery-wrapper mx-auto"></div>
+            </div>
+          </div>
+          <div class="row mt-1">
+            <div class="col-4">
+              <div class="gallery-wrapper mx-auto"></div>
+            </div>
+            <div class="col-4">
+              <div class="gallery-wrapper mx-auto"></div>
+            </div>
+            <div class="col-4">
+              <div class="gallery-wrapper mx-auto"></div>
+            </div>
+          </div>
+          <div class="row mt-1">
+            <div class="col-4">
+              <div class="gallery-wrapper mx-auto"></div>
+            </div>
+            <div class="col-4">
+              <div class="gallery-wrapper mx-auto"></div>
+            </div>
+            <div class="col-4">
+              <div class="gallery-wrapper mx-auto"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="himti-regional my-5">
+      <div class="container my-3">
+        <p class="title"><span>HIMTI R</span>egional</p>
+      </div>
+      <div class="container d-flex flex-column my-5">
+        <div class="row justify-content-center">
+          <div class="col-md-8 region-card text-center">
+            <img
+              src="/assets/images/region-kampus/Kemanggisan.png"
+              width="100%"
+              height="400px"
+              alt="Kampus Kemanggisan"
+            />
+            <div class="row justify-content-center">
+              <div class="overlay d-flex flex-column">
+                <p>HIMTI Greater Jakarta</p>
+                <p>
+                  Jl. Kebon Jeruk Raya No. 27 Kebon Jeruk Jakarta Barat 11530
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container py-3">
+        <hr />
+      </div>
+      <div class="container d-flex flex-column my-5">
+        <div class="row justify-content-center">
+          <div class="col-md-8 region-card text-center">
+            <img
+              src="/assets/images/region-kampus/Bandung.png"
+              width="100%"
+              height="400px"
+              alt="Kampus Kemanggisan"
+            />
+            <div class="row justify-content-center">
+              <div class="overlay d-flex flex-column">
+                <p>HIMTI Bandung</p>
+                <p>
+                  Jalan Pasirkaliki No. 25-27, Paskal Hyper Square – Bandung
+                  40181
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container py-3">
+        <hr />
+      </div>
+      <div class="container d-flex flex-column my-5">
+        <div class="row justify-content-center">
+          <div class="col-md-8 region-card text-center">
+            <img
+              src="/assets/images/region-kampus/Malang.png"
+              width="100%"
+              height="400px"
+              alt="Kampus Kemanggisan"
+            />
+            <div class="row justify-content-center">
+              <div class="overlay d-flex flex-column">
+                <p>HIMTI Malang</p>
+                <p>Jalan Araya Mansion No. 8 – 22, Araya – Malang 65154</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="partners my-5">
+      <div class="container my-3">
+        <p class="title"><span>O</span>ur <span>P</span>artners</p>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-md-4 d-flex align-items-center d-flex align-items-center"
+          >
+            <img
+              src="/assets/images/logo-partner/Code.png"
+              class="mx-auto my-5 d-block"
+              width="140px"
+              height="40px"
+              alt="Logo Code"
+            />
+          </div>
+          <div class="col-md-4 d-flex align-items-center">
+            <img
+              src="/assets/images/logo-partner/Gojek.png"
+              class="mx-auto my-5 d-block"
+              width="140px"
+              height="80px"
+              alt="Logo Gojek"
+            />
+          </div>
+          <div class="col-md-4 d-flex align-items-center">
+            <img
+              src="/assets/images/logo-partner/Binus.png"
+              class="mx-auto my-5 d-block"
+              width="140px"
+              height="85"
+              alt="Logo Binus"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 d-flex align-items-center">
+            <img
+              src="/assets/images/logo-partner/Cisco.png"
+              class="mx-auto my-5 d-block"
+              width="140px"
+              height="80px"
+              alt="Logo Cisco"
+            />
+          </div>
+          <div class="col-md-4 d-flex align-items-center">
+            <img
+              src="/assets/images/logo-partner/Microsoft.png"
+              class="mx-auto my-5 d-block"
+              width="140px"
+              height="30px"
+              alt="Logo Microsoft"
+            />
+          </div>
+          <div class="col-md-4 d-flex align-items-center">
+            <img
+              src="/assets/images/logo-partner/Apple.png"
+              class="mx-auto my-5 d-block"
+              width="100px"
+              height="120"
+              alt="Logo Apple"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 d-flex align-items-center">
+            <img
+              src="/assets/images/logo-partner/Samsung.png"
+              class="mx-auto my-5 d-block"
+              width="140px"
+              height="80px"
+              alt="Logo Samsung"
+            />
+          </div>
+          <div class="col-md-4 d-flex align-items-center">
+            <img
+              src="/assets/images/logo-partner/Toyota.png"
+              class="mx-auto my-5 d-block"
+              width="140px"
+              height="30px"
+              alt="Logo Toyota"
+            />
+          </div>
+          <div class="col-md-4 d-flex align-items-center">
+            <img
+              src="/assets/images/logo-partner/BCA.png"
+              class="mx-auto my-5 d-block"
+              width="140px"
+              height="45px"
+              alt="Logo BCA"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container-fluid px-5 py-3">
+        <div class="row text-center">
+          <div class="col-md-2">
+            <h3>Explore</h3>
+            <ul class="list-unstyled footer-option">
+              <li class="nav-link"><a href="/">Home</a></li>
+              <li class="nav-link"><a href="#">About Us</a></li>
+              <li class="nav-link">
+                <a href="/contact-us.html">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-2">
+            <h3>Lastest Event</h3>
+            <ul class="list-unstyled footer-option">
+              <li class="nav-link"><a href="#">Hishot</a></li>
+              <li class="nav-link"><a href="#">Techno</a></li>
+              <li class="nav-link"><a href="#">Computerun</a></li>
+            </ul>
+          </div>
+          <div class="col-md-8 logo-footer">
+            <img
+              src="assets/images/logo-himti/LogoHimti-Footer.png"
+              width="130px"
+              height="130px"
+              alt="Logo HIMTI"
+            />
+          </div>
+        </div>
+        <hr class="my-2" />
+        <div class="row">
+          <div class="col-sm-6 ml-3 footer-sosmed">
+            <a href="#"
+              ><img
+                src="/assets/images/logo-sosmed/LogoFacebook.png"
+                class="img-fluid mx-1"
+                width="25px"
+                height="25px"
+                alt="Logo Facebook"
+            /></a>
+            <a href="#"
+              ><img
+                src="/assets/images/logo-sosmed/LogoGithub.png"
+                class="img-fluid mx-1"
+                width="25px"
+                height="25px"
+                alt="Logo GitHub"
+            /></a>
+            <a href="#"
+              ><img
+                src="/assets/images/logo-sosmed/LogoInstagram.png"
+                class="img-fluid mx-1"
+                width="25px"
+                height="25px"
+                alt="Logo Instagram"
+            /></a>
+            <a href="#"
+              ><img
+                src="/assets/images/logo-sosmed/LogoTiktok.png"
+                class="img-fluid mx-1"
+                width="25px"
+                height="25px"
+                alt="Logo TikTok"
+            /></a>
+            <a href="#"
+              ><img
+                src="/assets/images/logo-sosmed/LogoTwitter.png"
+                class="img-fluid mx-1"
+                width="25px"
+                height="25px"
+                alt="Logo Twitter"
+            /></a>
+            <a href="#"
+              ><img
+                src="/assets/images/logo-sosmed/LogoYoutube.png"
+                class="img-fluid mx-1"
+                width="25px"
+                height="25px"
+                alt="Logo Youtube"
+            /></a>
+          </div>
+          <div class="col-sm-6">
+            <p class="footer-text">© 2022 HIMTI BINUS University</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.1.6/swiper-bundle.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        var mySwiper = new Swiper(".swiper", {
+          autoHeight: true,
+          autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+          },
+          speed: 500,
+          direction: "horizontal",
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            type: "progressbar",
+          },
+          loop: false,
+          effect: "slide",
+          spaceBetween: 30,
+          on: {
+            init: function () {
+              $(
+                ".swiper-pagination-custom .swiper-pagination-switch"
+              ).removeClass("active");
+              $(".swiper-pagination-custom .swiper-pagination-switch")
+                .eq(0)
+                .addClass("active");
+            },
+            slideChangeTransitionStart: function () {
+              $(
+                ".swiper-pagination-custom .swiper-pagination-switch"
+              ).removeClass("active");
+              $(".swiper-pagination-custom .swiper-pagination-switch")
+                .eq(mySwiper.realIndex)
+                .addClass("active");
+            },
+          },
+        });
+        $(".swiper-pagination-custom .swiper-pagination-switch").click(
+          function () {
+            mySwiper.slideTo($(this).index());
+            $(
+              ".swiper-pagination-custom .swiper-pagination-switch"
+            ).removeClass("active");
+            $(this).addClass("active");
+          }
+        );
+      });
+    </script>
+  </body>
+</html>
