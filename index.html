@@ -24,7 +24,7 @@
   <body>
     <section id="navbar">
       <nav class="navbar navbar-expand-lg position-absolute position-fixed">
-        <div class="container ss">
+        <div class="container">
           <a class="navbar-brand" href="#">
             <img
               src="./assets/images/navbar/navbar-logo.png"
@@ -94,6 +94,9 @@
           </div>
         </div>
       </nav>
+    </section>
+
+    <section id="carousel">
       <div
         id="carouselExampleControls"
         class="carousel slide position-relative"
@@ -103,7 +106,14 @@
           <div class="carousel-item active">
             <img
               src="./assets/images/navbar/carousel-1.png"
-              class="d-block w-100"
+              class="w-100 d-flex justify-content-center mx-auto"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./assets/images/navbar/carousel-1.png"
+              class="w-100 d-flex justify-content-center mx-auto"
               alt="..."
             />
           </div>
@@ -128,15 +138,118 @@
         </button>
       </div>
     </section>
+
     <section id="event" class="mt-5">
-      <div class="container">
+      <div class="container p-5">
         <h1 style="color: #1b97d4" class="text-center">
           E<span style="color: black">vent</span> HIMTI
         </h1>
       </div>
+      <div class="container">
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide"
+          data-bs-ride="true"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="event-wrapper">
+                <div class="event-left">
+                  <div class="event-body">
+                    <div class="event-image">
+                      <img
+                        src="./assets/images/event/hishot-logo.png"
+                        alt="logo-hishot-event"
+                      />
+                    </div>
+                    <div class="event-description">
+                      <p>
+                        HISHOT 2021 is here again this year with various
+                        interesting events such as seminars, workshops, and
+                        study tours with the theme "Augmented Reality and
+                        Virtual Reality" which was very influential in the era
+                        of industrial revolution 4.0. Come Join Us! Don’t miss
+                        it.
+                      </p>
+                    </div>
+                    <div class="event-button">
+                      <button>More Info</button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="event-right">
+                  <div class="event-body">
+                    <div class="event-image">
+                      <img
+                        src="./assets/images/event/techno-logo.png"
+                        alt="logo-hishot-event"
+                      />
+                    </div>
+                    <div class="event-description">
+                      <p>
+                        HISHOT 2021 is here again this year with various
+                        interesting events such as seminars, workshops, and
+                        study tours with the theme "Augmented Reality and
+                        Virtual Reality" which was very influential in the era
+                        of industrial revolution 4.0. Come Join Us! Don’t miss
+                        it.
+                      </p>
+                    </div>
+                    <div class="event-button">
+                      <button>More Info</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
     </section>
 
-    <section id="timeline">
+    <section id="timeline" class="mt-5">
       <div class="container">
         <h1 style="color: #1b97d4" class="text-center">
           T<span style="color: black">imeline</span> HIMTI
@@ -155,8 +268,11 @@
             <li class="swiper-pagination-switch">
               <span class="switch-title">2013</span>
             </li>
-            <li class="swiper-pagination-switch last">
+            <li class="swiper-pagination-switch">
               <span class="switch-title">2001</span>
+            </li>
+            <li class="swiper-pagination-switch last">
+              <span class="switch-title">2005</span>
             </li>
           </ul>
           <!-- Progressbar -->
@@ -179,6 +295,9 @@
                     exercitationem, vel quia molestiae accusamus et?
                   </p>
                 </div>
+              </div>
+              <div class="swiper-slide">
+                <span class="title">Swiper Timeline Progressbar</span>
               </div>
               <div class="swiper-slide">
                 <span class="title">Swiper Timeline Progressbar</span>
