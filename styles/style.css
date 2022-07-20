@@ -201,8 +201,14 @@ body {
   align-items: center;
   border: 2px solid #1b97d4;
   border-radius: 2rem;
-  width: 300px;
+  width: 300px !important;
   min-height: 300px;
+}
+
+.card-picture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .card-name h1 {
@@ -228,8 +234,8 @@ body {
   background-color: gray !important;
 }
 
-.carousel-control-next-icon,
-.carousel-control-prev-icon {
+.carousel-control-next-icon.event-carousel,
+.carousel-control-prev-icon.event-carousel {
   background-color: gray;
 }
 
@@ -299,56 +305,44 @@ body {
   padding: 0.5rem;
 }
 
+@media screen and (max-width: 1200px) {
+  .event-wrapper {
+    flex-direction: column;
+    margin-right: auto;
+    margin-left: auto;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 412px) {
+  .event-left,
+  .event-right {
+    width: 300px;
+  }
+  .event-left .event-image img,
+  .event-right .event-image img {
+    width: 100%;
+  }
+
+  .event-left .event-description p,
+  .event-right .event-description p {
+    font-size: 1rem;
+  }
+
+  .event-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
 .gallery-wrapper {
   background-color: #52524c;
   border-radius: 2rem;
   width: auto;
   height: 200px;
-}
-
-@keyframes marquee {
-  0% {
-    left: 0;
-  }
-  100% {
-    left: -900%;
-  }
-}
-.animate {
-  width: 1800%;
-  animation: marquee 10s linear infinite;
-  top: 50%;
-  transform: translate(0, -50%);
-}
-.logo a {
-  width: 80px;
-  -webkit-transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
-}
-@media screen and (max-width: 1024px) {
-  @keyframes marquee {
-    0% {
-      left: 0;
-    }
-    100% {
-      left: -375%;
-    }
-  }
-  .animate {
-    width: 750%;
-    animation: marquee 10s linear infinite;
-    top: 50%;
-    transform: translate(0, -50%);
-  }
-  .logo a {
-    width: 100px;
-    -webkit-transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
-  }
-}
-.animate:hover {
-  animation-play-state: paused;
-}
-.logo a:hover {
-  transform: scale(1.3);
 }
 
 /* Home */
